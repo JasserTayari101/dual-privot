@@ -12,8 +12,14 @@ int main() {
     for (int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
+    
+    // TODO
 
-    // TODO    
+    quick_sort(arr, 0, n - 1, &compare_cnt);
+
+    printf("\n");
+    print_array(arr, n);
+    printf("Used %d comparisons.\n", compare_cnt);
 
     free(arr);
     return 0;
